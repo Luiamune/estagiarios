@@ -4,23 +4,22 @@
 		private $email;
 		
 		public function __construct(){
-			$this->nome = "tio sam"
-			$this->email = "tiosam@GGmail.com"
+			
 		}
 		
-		setNome($nome){
+		public function setNome($nome){
 			$this->nome = $nome;
 		}
 		
-		getNome (){
+		public function getNome (){
 			return $this-> nome;
 		}
 		
-		setEmail($email){
+		public function setEmail($email){
 			$this->email = email;
 		}
 		
-		getEmail(){
+		public function getEmail(){
 			return $this->email;
 		}
 	}
