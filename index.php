@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<style>
+	.container {
+		margin: 20%;
+		text-align: center;
+	
+	}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <head>
         <title>Laragon</title>
@@ -27,11 +34,13 @@
 function validate(){
 	var nome=$('#nome').val();
 	var email=$('#email').val();
-	//if(){
-		//alert("Campos nome e e-mail obrigatorios");
-		//return false;
-	//}else{
-		//return true;
-	//}
+	
+	if(email == "" || nome == ""){
+		alert(nome);
+		alert(email);
+		return false;
+	}else {
+		return true;
+	}
 }
 </script>
